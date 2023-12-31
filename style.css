@@ -231,7 +231,7 @@ img {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  justify-content: center;
+  align-items: center;
   border-radius: 6px;
 }
 
@@ -253,21 +253,25 @@ img {
     margin-top: 10px;
   }
   .btn-close {
+    display: flex;
+    flex-direction: row;
     border: none;
     position: relative;
-    top: -70px;
-    right: -320px;
-    font-size: 16px;
+    top: -10px;
+    font-size: 13px;
+    right: 0;
+    padding: 6px;
     cursor: pointer;
   }
+  .btn-close svg {
+    width: 10px;
+  }
   .modal-body {
-    margin-top: -40px;
+    margin-top: -30px;
+    font-size: 12px;
   }
   .country-name {
     font-size: 14px;
-  }
-  .modal-body p {
-    font-size: 12px;
   }
   section.sticky {
     top: 57px;
