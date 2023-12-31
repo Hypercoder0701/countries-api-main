@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Where in the World?</h1>
+            <button class="btn-dark-mode" id="dark-mode">
+                <i class="far fa-moon"></i>
+                <i class="fas fa-moon"></i>
+                Dark Mode
+            </button>
+        </div>
+    </header>
+
+    <section class="sticky">
+        <div class="container">
+            <input class="search" id="search" type="text" placeholder="Search for a country...">
+            <div class="dropdown" id="filter">
+                Filter by Region
+                <i class="fas fa-chevron-down"></i>
+                <ul>
+                    <li>All</li>
+                    <li>Africa</li>
+                    <li>Americas</li>
+                    <li>Asia</li>
+                    <li>Europe</li>
+                    <li>Oceania</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="container">
+            <button class="btn-close" id="close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.46447 4.10744L7.64298 5.28596L3.75389 9.17504L18.6031 9.17504L18.6031 10.825L3.75389 10.825L7.64298 14.714L6.46447 15.8926L0.57191 10L6.46447 4.10744Z"
+                        fill="#111517" />
+                </svg>
+                Go Back
+            </button>
+            <img src="" alt="" />
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container countries" id="countries">
+
+            <h2>Countries loading...</h2>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
